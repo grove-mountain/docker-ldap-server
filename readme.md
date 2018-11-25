@@ -1,11 +1,13 @@
 # LDAP Docker for HashiCorp SEs
 
+
 This is a quick and dirty localized LDAP server for using in demonstrations. One of the nicer benefits of using the OTS OpenLDAP server is that it automatically sets up the memberOf overlay.   This can help you troubleshoot LDAP connectivity issues customers may be having.
 
 If you want to customize this, you can add any LDIF files you want into the ldif directory and they will be picked up on container start.
 
 For the most part, you really don't have to do anything.
 
+This is some basic extensions of: https://github.com/osixia/docker-openldap
 
 If you want to change the default password:
 e.g.
