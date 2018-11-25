@@ -33,6 +33,7 @@ Get all the things:
 ```
 # It's from a mac, add Windows instructions please!
 export IP_ADDRESS=$(ipconfig getifaddr en0)
+
 ldapsearch -x -H ldap://${IP_ADDRESS} -b dc=hashidemos,dc=com \
 -D "cn=read-only,dc=hashidemos,dc=com" -w devsecopsFTW
 ```
