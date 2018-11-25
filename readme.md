@@ -26,3 +26,20 @@ When you're done just kill docker:
 ```
 docker kill openldap
 ```
+
+
+Example ldapsearch
+Get all the things:
+```
+# It's from a mac, add Windows instructions please!
+export IP_ADDRESS=$(ipconfig getifaddr en0)
+ldapsearch -x -H ldap://${IP_ADDRESS} -b dc=hashidemos,dc=com \
+-D "cn=read-only,dc=hashidemos,dc=com" -w devsecopsFTW
+```
+
+Search for any user DNs that belong to cn=solutions_engineers,ou=group,dc=hashidemos,dc=com using memberOf overlay
+```
+ldapsearch -LLL -x -H ldap://${IP_ADDRESS} -b dc=hashidemos,dc=com \
+-D "cn=read-only,dc=hashidemos,dc=com" -w devsecopsFTW \
+'(memberOf=cn=solutions_engineers,ou=group,dc=hashidemos,dc=com)' dn
+```
