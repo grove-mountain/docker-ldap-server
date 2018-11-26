@@ -1,9 +1,0 @@
-dn: ou=group,dc=hashidemos,dc=com
-objectClass: organizationalUnit
-objectClass: top
-ou: group
-
-dn: ou=people,dc=hashidemos,dc=com
-objectClass: organizationalUnit
-objectClass: top
-ou: people

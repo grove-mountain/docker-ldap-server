@@ -2,31 +2,20 @@
 # e.g. ou=vault,ou=um_group
 # um_group is for storing UniqueMember entries.  Because these will automatically be created based on user records
 #  they don't have to be explicitly defined
-# posix_group is for storing posix group ids and members
+# posix_group is for storing members who log into posix systems
+#  gid will be assigned automatically during template rendering
 # people is for storing person records
 # service_acct is for storing service accounts or other automate users
+base_dn: dc=hashidemos,dc=com
 ou:
-  - ou=um_group
-  - ou=posix_group
-  - ou=people
-  - ou=service_acct
-posix_groups:
-  admins:
-    gid: 1000
-  vault_devs:
-    gid: 1001
-  terraform_devs:
-    gid: 1002
-  consul_devs:
-    gid: 1003
-  nomad_devs:
-    gid: 1004
-  vagrant_devs:
-    gid: 1005
-  packer_devs:
-    gid: 1006
-  users:
-    gid: 1007
+  - name: um_group
+    path: ou=um_group
+  - name: posix_group
+    path: ou=posix_group
+  - name: people
+    path: ou=people
+  - name: service_acct
+    path: ou=service_acct
 people:
   mitchell:
     first: Mitchell

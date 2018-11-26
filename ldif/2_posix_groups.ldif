@@ -1,0 +1,28 @@
+
+dn: cn=admins,ou=posix_group,dc=hashidemos,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: admins
+gidNumber: 1000
+memberUid: cn=mitchell,ou=people,dc=hashidemos,dc=com
+memberUid: cn=armon,ou=people,dc=hashidemos,dc=com
+memberUid: cn=jlundberg,ou=people,dc=hashidemos,dc=com
+memberUid: cn=llarsen,ou=people,dc=hashidemos,dc=com
+memberUid: cn=bgreen,ou=people,dc=hashidemos,dc=com
+memberUid: cn=ehron,ou=people,dc=hashidemos,dc=com
+
+dn: cn=vault_devs,ou=posix_group,dc=hashidemos,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: vault_devs
+gidNumber: 1001
+memberUid: cn=jeff,ou=people,dc=hashidemos,dc=com
+memberUid: cn=andy,ou=people,dc=hashidemos,dc=com
+
+dn: cn=users,ou=posix_group,dc=hashidemos,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: users
+gidNumber: 1002
+memberUid: cn=geoffrey,ou=people,dc=hashidemos,dc=com
+memberUid: cn=yoko,ou=people,dc=hashidemos,dc=com
