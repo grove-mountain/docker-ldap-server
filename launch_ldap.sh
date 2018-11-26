@@ -1,11 +1,12 @@
+# 
 DOCKER_VERSION=1.2.2
-LDAP_ORGANISATION="HashiCorp Inc"
-LDAP_DOMAIN="hashidemos.com"
-LDAP_ADMIN_PASSWORD="hashifolk"
-LDAP_HOSTNAME="ldap.hashidemos.com"
-LDAP_READONLY_USER=true
-LDAP_READONLY_USER_USERNAME=read-only
-LDAP_READONLY_USER_PASSWORD="devsecopsFTW"
+LDAP_ORGANISATION=${LDAP_ORGANISATION:-"HashiCorp Inc"}
+LDAP_DOMAIN=${LDAP_DOMAIN:-"hashidemos.com"}
+LDAP_ADMIN_PASSWORD=${LDAP_ADMIN_PASSWORD:-"hashifolk"}
+LDAP_HOSTNAME=${LDAP_HOSTNAME:-"ldap.hashidemos.com"}
+LDAP_READONLY_USER=${LDAP_READONLY_USER:-true}
+LDAP_READONLY_USER_USERNAME=${LDAP_READONLY_USER_USERNAME:-read-only}
+LDAP_READONLY_USER_PASSWORD=${LDAP_READONLY_USER_PASSWORD:-"devsecopsFTW"}
 
 # Get the relative directory name
 # Sorry windows folks, you're gonna have to figure this out and modify it for you pleasure

@@ -1,0 +1,146 @@
+# ou starts at the root base domain and can be "tiered"
+# e.g. ou=vault,ou=um_group
+# um_group is for storing UniqueMember entries.  Because these will automatically be created based on user records
+#  they don't have to be explicitly defined
+# posix_group is for storing posix group ids and members
+# people is for storing person records
+# service_acct is for storing service accounts or other automate users
+ou:
+  - ou=um_group
+  - ou=posix_group
+  - ou=people
+  - ou=service_acct
+posix_groups:
+  admins:
+    gid: 1000
+  vault_devs:
+    gid: 1001
+  terraform_devs:
+    gid: 1002
+  consul_devs:
+    gid: 1003
+  nomad_devs:
+    gid: 1004
+  vagrant_devs:
+    gid: 1005
+  packer_devs:
+    gid: 1006
+  users:
+    gid: 1007
+people:
+  mitchell:
+    first: Mitchell
+    last: Hashimoto
+    email: mitchell@hashicorp.com
+    um_groups:
+      - founders
+      - vagrant
+      - vault
+      - nomad
+      - terraform
+      - consul
+      - packer
+    posix_groups:
+      - admins
+  armon:
+    first: Armon
+    last: Dadgar
+    email: armon@hashicorp.com
+    um_groups:
+      - founders
+      - vagrant
+      - vault
+      - nomad
+      - terraform
+      - consul
+      - packer
+    posix_groups:
+      - admins
+  jlundberg:
+    first: Jake
+    last: Lundberg
+    email: jlundberg@hashicorp.com
+    um_groups:
+      - solutions_engineering
+      - nomad_gtm
+      - vault_education
+    posix_groups:
+      - admins
+  llarsen:
+    first: Lance
+    last: Larsen
+    email: llarsen@hashicorp.com
+    um_groups:
+      - solutions_engineering
+      - terraform_gtm
+    posix_groups:
+      - admins
+  bgreen:
+    first: Brian
+    last: Green
+    email: bgreen@hashicorp.com
+    um_groups:
+      - pro_svcs
+      - vault_gtm
+    posix_groups:
+      - admins
+  ehron:
+    first: Ehron
+    last: Gwinn
+    email: ehron@hashicorp.com
+    um_groups:
+      - solutions_engineering
+      - nomad_gtm
+    posix_groups:
+      - admins
+  jeff:
+    first: Jeff
+    last: Mitchell
+    email: jeff@hashicorp.com
+    um_groups:
+      - vault
+      - vault_gtm
+    posix_groups:
+      - vault_devs
+  andy:
+    first: Andy
+    last: Manoski
+    email: andy@hashicorp.com
+    um_groups:
+      - vault
+      - vault_gtm
+    posix_groups:
+      - vault_devs
+  geoffrey:
+    first: Geoffrey
+    last: Grosenbach
+    email: geoffrey@hashicorp.com
+    um_groups:
+      - education
+      - vault_education
+      - consul_education
+      - terraform_education
+      - nomad_education
+    posix_groups:
+      - users
+  yoko:
+    first: Yoko
+    last: Hyakuna
+    email: yoko@hashicorp.com
+    um_groups:
+      - education
+      - vault_education
+    posix_groups:
+      - users
+
+
+
+
+
+
+
+
+
+
+
+

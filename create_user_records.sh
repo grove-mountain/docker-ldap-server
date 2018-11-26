@@ -2,6 +2,7 @@ UID_NUMBER=5000
 GID_NUMBER=5000
 USER_LDIF=ldif/1_people.ldif
 GROUP_LDIF=ldif/2_se_group.ldif
+EMAIL_DOMAIN=${EMAIL_DOMAIN:-hashicorp.com}
 # default is hashed of this_is_a_terrible_password_42
 LDAP_PASSWD_HASH=${LDAP_PASSWD_HASH:-"{SSHA}AlgJ/vKO/RlhOoNhdSeTQKSpq+8HWpe7"}
 
