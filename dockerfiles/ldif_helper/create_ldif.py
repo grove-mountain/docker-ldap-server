@@ -6,7 +6,8 @@ from jinja2 import Template
 import yaml
 
 input_file="ldif_feed.yaml"
-default_password="{SSHA}TZxtCI87FgRXt051Dd4lFCc9XXktY5Qx"
+# plain_text=thispasswordsucks
+default_password="{SSHA}p+PkwHDzATkWKB5EgBIiFVOOPMM0Ux6UZ0Z1bw=="
 start_uid=1000
 start_gid=1000
 
