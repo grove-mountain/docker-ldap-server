@@ -26,3 +26,4 @@ cn: users
 gidNumber: 1002
 memberUid: cn=geoffrey,ou=people,dc=hashidemos,dc=com
 memberUid: cn=yoko,ou=people,dc=hashidemos,dc=com
+memberUid: cn=rachel,ou=people,dc=hashidemos,dc=com

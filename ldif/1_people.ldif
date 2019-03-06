@@ -158,3 +158,19 @@ uidNumber: 1009
 gidNumber: 1000
 mail: yoko@hashicorp.com                      
 userPassword: {SSHA}p+PkwHDzATkWKB5EgBIiFVOOPMM0Ux6UZ0Z1bw==
+
+dn: cn=rachel,ou=people,dc=hashidemos,dc=com
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+cn: rachel
+sn: Sharp
+givenName: Rachel
+homeDirectory: /home/rachel
+uid: rachel
+uidNumber: 1010
+gidNumber: 1000
+mail: rachel@hashicorp.com                      
+userPassword: {SSHA}p+PkwHDzATkWKB5EgBIiFVOOPMM0Ux6UZ0Z1bw==

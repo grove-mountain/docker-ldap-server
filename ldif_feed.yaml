@@ -121,3 +121,12 @@ people:
       - vault_education
     posix_groups:
       - users
+  rachel:
+    first: Rachel
+    last: Sharp
+    email: rachel@hashicorp.com
+    um_groups:
+      - education
+      - terraform_education
+    posix_groups:
+      - users

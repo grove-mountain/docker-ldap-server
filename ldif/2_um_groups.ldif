@@ -99,6 +99,7 @@ objectClass: top
 cn: education
 uniqueMember: cn=geoffrey,ou=people,dc=hashidemos,dc=com
 uniqueMember: cn=yoko,ou=people,dc=hashidemos,dc=com
+uniqueMember: cn=rachel,ou=people,dc=hashidemos,dc=com
 
 dn: cn=consul_education,ou=um_group,dc=hashidemos,dc=com
 objectClass: groupOfUniqueNames
@@ -111,6 +112,7 @@ objectClass: groupOfUniqueNames
 objectClass: top
 cn: terraform_education
 uniqueMember: cn=geoffrey,ou=people,dc=hashidemos,dc=com
+uniqueMember: cn=rachel,ou=people,dc=hashidemos,dc=com
 
 dn: cn=nomad_education,ou=um_group,dc=hashidemos,dc=com
 objectClass: groupOfUniqueNames

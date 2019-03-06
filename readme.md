@@ -1,4 +1,4 @@
-# LDAP Docker for HashiCorp SEs
+# LDAP Docker Server for local LDAP development
 
 This is a basic extension of: https://github.com/osixia/docker-openldap
 
