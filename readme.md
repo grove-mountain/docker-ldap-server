@@ -6,6 +6,8 @@ This is a quick and dirty localized LDAP server for using in demonstrations. One
 
 For the most part, you really don't have to do anything.
 
+BE CAREFUL OPENING THIS TO THE WORLD!  It's designed for local development and shouldn't be a vector for attack, but be careful as the passwords are published on the internet.   
+
 ## Run it
 To run the tool using Docker directly, use launch_ldap.sh
 ```
@@ -27,7 +29,7 @@ This repo ships with some pre-canned LDIF files to bootstrap the server when it 
 
 ## Test it
 
-The passwords below are defaults, so if you customize them, make sure to adjust appropriately.
+The passwords below are defaults sourced form the env.sh file, feel free to customize however you'd like.  
 
 Example ldapsearch
 Get all the things:
