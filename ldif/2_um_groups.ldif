@@ -1,121 +1,70 @@
 
-dn: cn=founders,ou=um_group,dc=hashidemos,dc=com
+dn: cn=founders,ou=um_group,dc=ourcorp,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
 cn: founders
-uniqueMember: cn=mitchell,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=armon,ou=people,dc=hashidemos,dc=com
+uniqueMember: cn=alice,ou=people,dc=ourcorp,dc=com
+uniqueMember: cn=bob,ou=people,dc=ourcorp,dc=com
 
-dn: cn=vagrant,ou=um_group,dc=hashidemos,dc=com
+dn: cn=finance,ou=um_group,dc=ourcorp,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
-cn: vagrant
-uniqueMember: cn=mitchell,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=armon,ou=people,dc=hashidemos,dc=com
+cn: finance
+uniqueMember: cn=alice,ou=people,dc=ourcorp,dc=com
 
-dn: cn=vault,ou=um_group,dc=hashidemos,dc=com
+dn: cn=rockstars,ou=um_group,dc=ourcorp,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
-cn: vault
-uniqueMember: cn=mitchell,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=armon,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=jeff,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=andy,ou=people,dc=hashidemos,dc=com
+cn: rockstars
+uniqueMember: cn=alice,ou=people,dc=ourcorp,dc=com
 
-dn: cn=nomad,ou=um_group,dc=hashidemos,dc=com
+dn: cn=engineering,ou=um_group,dc=ourcorp,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
-cn: nomad
-uniqueMember: cn=mitchell,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=armon,ou=people,dc=hashidemos,dc=com
+cn: engineering
+uniqueMember: cn=bob,ou=people,dc=ourcorp,dc=com
+uniqueMember: cn=chun,ou=people,dc=ourcorp,dc=com
 
-dn: cn=terraform,ou=um_group,dc=hashidemos,dc=com
+dn: cn=it,ou=um_group,dc=ourcorp,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
-cn: terraform
-uniqueMember: cn=mitchell,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=armon,ou=people,dc=hashidemos,dc=com
+cn: it
+uniqueMember: cn=bob,ou=people,dc=ourcorp,dc=com
+uniqueMember: cn=deepak,ou=people,dc=ourcorp,dc=com
 
-dn: cn=consul,ou=um_group,dc=hashidemos,dc=com
+dn: cn=database,ou=um_group,dc=ourcorp,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
-cn: consul
-uniqueMember: cn=mitchell,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=armon,ou=people,dc=hashidemos,dc=com
+cn: database
+uniqueMember: cn=chun,ou=people,dc=ourcorp,dc=com
 
-dn: cn=packer,ou=um_group,dc=hashidemos,dc=com
+dn: cn=marketing,ou=um_group,dc=ourcorp,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
-cn: packer
-uniqueMember: cn=mitchell,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=armon,ou=people,dc=hashidemos,dc=com
+cn: marketing
+uniqueMember: cn=chun,ou=people,dc=ourcorp,dc=com
 
-dn: cn=solutions_engineering,ou=um_group,dc=hashidemos,dc=com
+dn: cn=managers,ou=um_group,dc=ourcorp,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
-cn: solutions_engineering
-uniqueMember: cn=jlundberg,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=llarsen,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=ehron,ou=people,dc=hashidemos,dc=com
+cn: managers
+uniqueMember: cn=deepak,ou=people,dc=ourcorp,dc=com
+uniqueMember: cn=frank,ou=people,dc=ourcorp,dc=com
 
-dn: cn=nomad_gtm,ou=um_group,dc=hashidemos,dc=com
+dn: cn=security,ou=um_group,dc=ourcorp,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
-cn: nomad_gtm
-uniqueMember: cn=jlundberg,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=ehron,ou=people,dc=hashidemos,dc=com
+cn: security
+uniqueMember: cn=eve,ou=people,dc=ourcorp,dc=com
 
-dn: cn=vault_education,ou=um_group,dc=hashidemos,dc=com
+dn: cn=hackers,ou=um_group,dc=ourcorp,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
-cn: vault_education
-uniqueMember: cn=jlundberg,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=geoffrey,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=yoko,ou=people,dc=hashidemos,dc=com
+cn: hackers
+uniqueMember: cn=eve,ou=people,dc=ourcorp,dc=com
 
-dn: cn=terraform_gtm,ou=um_group,dc=hashidemos,dc=com
+dn: cn=hr,ou=um_group,dc=ourcorp,dc=com
 objectClass: groupOfUniqueNames
 objectClass: top
-cn: terraform_gtm
-uniqueMember: cn=llarsen,ou=people,dc=hashidemos,dc=com
-
-dn: cn=pro_svcs,ou=um_group,dc=hashidemos,dc=com
-objectClass: groupOfUniqueNames
-objectClass: top
-cn: pro_svcs
-uniqueMember: cn=bgreen,ou=people,dc=hashidemos,dc=com
-
-dn: cn=vault_gtm,ou=um_group,dc=hashidemos,dc=com
-objectClass: groupOfUniqueNames
-objectClass: top
-cn: vault_gtm
-uniqueMember: cn=bgreen,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=jeff,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=andy,ou=people,dc=hashidemos,dc=com
-
-dn: cn=education,ou=um_group,dc=hashidemos,dc=com
-objectClass: groupOfUniqueNames
-objectClass: top
-cn: education
-uniqueMember: cn=geoffrey,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=yoko,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=rachel,ou=people,dc=hashidemos,dc=com
-
-dn: cn=consul_education,ou=um_group,dc=hashidemos,dc=com
-objectClass: groupOfUniqueNames
-objectClass: top
-cn: consul_education
-uniqueMember: cn=geoffrey,ou=people,dc=hashidemos,dc=com
-
-dn: cn=terraform_education,ou=um_group,dc=hashidemos,dc=com
-objectClass: groupOfUniqueNames
-objectClass: top
-cn: terraform_education
-uniqueMember: cn=geoffrey,ou=people,dc=hashidemos,dc=com
-uniqueMember: cn=rachel,ou=people,dc=hashidemos,dc=com
-
-dn: cn=nomad_education,ou=um_group,dc=hashidemos,dc=com
-objectClass: groupOfUniqueNames
-objectClass: top
-cn: nomad_education
-uniqueMember: cn=geoffrey,ou=people,dc=hashidemos,dc=com
+cn: hr
+uniqueMember: cn=frank,ou=people,dc=ourcorp,dc=com

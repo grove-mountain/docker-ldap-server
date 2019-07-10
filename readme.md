@@ -27,6 +27,20 @@ This repo ships with some pre-canned LDIF files to bootstrap the server when it 
 ./create_ldif.sh
 ```
 
+Alternately, you can just create another LDIF feed file and set the LDIF_FEED environment variable
+
+```
+LDIF_FEED=ourcorp_ldif_feed.yaml
+./create_ldif.sh
+```
+
+Make sure that the LDAP_DOMAIN and LDAP_HOSTNAME environment variables match your new environment as well.
+```
+LDAP_DOMAIN=ourcorp.com
+LDAP_HOSTNAME=ldap.ourcorp.com
+./launch_ldap.sh
+```
+
 ## Test it
 
 The passwords below are defaults sourced form the env.sh file, feel free to customize however you'd like.  
@@ -37,15 +51,15 @@ Get all the things:
 # It's from a mac, add Windows instructions please!
 export IP_ADDRESS=$(ipconfig getifaddr en0)
 
-ldapsearch -x -H ldap://${IP_ADDRESS} -b dc=hashidemos,dc=com \
--D "cn=read-only,dc=hashidemos,dc=com" -w ${LDAP_READONLY_USER_PASSWORD}
+ldapsearch -x -H ldap://${IP_ADDRESS} -b dc=ourcorp,dc=com \
+-D "cn=read-only,dc=ourcorp,dc=com" -w ${LDAP_READONLY_USER_PASSWORD}
 ```
 
-Search for any user DNs that belong to cn=solutions_engineers,ou=group,dc=hashidemos,dc=com using memberOf overlay
+Search for any user DNs that belong to cn=solutions_engineers,ou=group,dc=ourcorp,dc=com using memberOf overlay
 ```
-ldapsearch -LLL -x -H ldap://${IP_ADDRESS} -b dc=hashidemos,dc=com \
--D "cn=read-only,dc=hashidemos,dc=com" -w ${LDAP_READONLY_USER_PASSWORD} \
-'(memberOf=cn=solutions_engineering,ou=um_group,dc=hashidemos,dc=com)' dn
+ldapsearch -LLL -x -H ldap://${IP_ADDRESS} -b dc=ourcorp,dc=com \
+-D "cn=read-only,dc=ourcorp,dc=com" -w ${LDAP_READONLY_USER_PASSWORD} \
+'(memberOf=cn=rockstars,ou=um_group,dc=ourcorp,dc=com)' dn
 ```
 
 ## Advice
