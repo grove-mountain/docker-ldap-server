@@ -27,6 +27,20 @@ This repo ships with some pre-canned LDIF files to bootstrap the server when it 
 ./create_ldif.sh
 ```
 
+Alternately, you can just create another LDIF feed file and set the LDIF_FEED environment variable
+
+```
+LDIF_FEED=ourcorp_ldif_feed.yaml
+./create_ldif.sh
+```
+
+You also need to make sure that the LDAP_DOMAIN and LDAP_HOSTNAME environment variables are set
+```
+LDAP_DOMAIN=ourcorp.com
+LDAP_HOSTNAME=ldap.ourcorp.com
+./launch_ldap.sh
+```
+
 ## Test it
 
 The passwords below are defaults sourced form the env.sh file, feel free to customize however you'd like.  

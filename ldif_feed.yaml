@@ -6,7 +6,7 @@
 #  gid will be assigned automatically during template rendering
 # people is for storing person records
 # service_acct is for storing service accounts or other automate users
-base_dn: dc=hashidemos,dc=com
+base_dn: dc=ourcorp,dc=com
 ou:
   - name: um_group
     path: ou=um_group
@@ -17,116 +17,60 @@ ou:
   - name: service_acct
     path: ou=service_acct
 people:
-  mitchell:
-    first: Mitchell
-    last: Hashimoto
-    email: mitchell@hashicorp.com
+  alice:
+    first: Alice
+    last: Inchains
+    email: alice@ourcorp.com
     um_groups:
       - founders
-      - vagrant
-      - vault
-      - nomad
-      - terraform
-      - consul
-      - packer
+      - finance
+      - rockstars
     posix_groups:
       - admins
-  armon:
-    first: Armon
-    last: Dadgar
-    email: armon@hashicorp.com
+  bob:
+    first: Bob
+    last: Paulson
+    email: bob@ourcorp.com
     um_groups:
       - founders
-      - vagrant
-      - vault
-      - nomad
-      - terraform
-      - consul
-      - packer
+      - engineering
+      - it
     posix_groups:
       - admins
-  jlundberg:
-    first: Jake
-    last: Lundberg
-    email: jlundberg@hashicorp.com
+  chun:
+    first: Chun
+    last: Li
+    email: chun@ourcorp.com
     um_groups:
-      - solutions_engineering
-      - nomad_gtm
-      - vault_education
+      - engineering
+      - database
+      - marketing
     posix_groups:
-      - admins
-  llarsen:
-    first: Lance
-    last: Larsen
-    email: llarsen@hashicorp.com
+      - engineering
+  deepak:
+    first: Deepak
+    last: Chodron
+    email: deepak@ourcorp.com
     um_groups:
-      - solutions_engineering
-      - terraform_gtm
+      - it
+      - managers
     posix_groups:
-      - admins
-  bgreen:
-    first: Brian
-    last: Green
-    email: bgreen@hashicorp.com
+      - it
+  eve:
+    first: Eve
+    last: Darknight
+    email: eve@ourcorp.com
     um_groups:
-      - pro_svcs
-      - vault_gtm
+      - security
+      - hackers
     posix_groups:
-      - admins
-  ehron:
-    first: Ehron
-    last: Gwinn
-    email: ehron@hashicorp.com
+      - eve
+  frank:
+    first: Frank   
+    last: Franklin
+    email: frank@ourcorp.com
     um_groups:
-      - solutions_engineering
-      - nomad_gtm
-    posix_groups:
-      - admins
-  jeff:
-    first: Jeff
-    last: Mitchell
-    email: jeff@hashicorp.com
-    um_groups:
-      - vault
-      - vault_gtm
-    posix_groups:
-      - vault_devs
-  andy:
-    first: Andy
-    last: Manoski
-    email: andy@hashicorp.com
-    um_groups:
-      - vault
-      - vault_gtm
-    posix_groups:
-      - vault_devs
-  geoffrey:
-    first: Geoffrey
-    last: Grosenbach
-    email: geoffrey@hashicorp.com
-    um_groups:
-      - education
-      - vault_education
-      - consul_education
-      - terraform_education
-      - nomad_education
-    posix_groups:
-      - users
-  yoko:
-    first: Yoko
-    last: Hyakuna
-    email: yoko@hashicorp.com
-    um_groups:
-      - education
-      - vault_education
-    posix_groups:
-      - users
-  rachel:
-    first: Rachel
-    last: Sharp
-    email: rachel@hashicorp.com
-    um_groups:
-      - education
-      - terraform_education
+      - hr
+      - managers
     posix_groups:
       - users

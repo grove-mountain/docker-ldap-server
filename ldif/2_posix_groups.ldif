@@ -1,29 +1,36 @@
 
-dn: cn=admins,ou=posix_group,dc=hashidemos,dc=com
+dn: cn=admins,ou=posix_group,dc=ourcorp,dc=com
 objectClass: posixGroup
 objectClass: top
 cn: admins
 gidNumber: 1000
-memberUid: cn=mitchell,ou=people,dc=hashidemos,dc=com
-memberUid: cn=armon,ou=people,dc=hashidemos,dc=com
-memberUid: cn=jlundberg,ou=people,dc=hashidemos,dc=com
-memberUid: cn=llarsen,ou=people,dc=hashidemos,dc=com
-memberUid: cn=bgreen,ou=people,dc=hashidemos,dc=com
-memberUid: cn=ehron,ou=people,dc=hashidemos,dc=com
+memberUid: cn=alice,ou=people,dc=ourcorp,dc=com
+memberUid: cn=bob,ou=people,dc=ourcorp,dc=com
 
-dn: cn=vault_devs,ou=posix_group,dc=hashidemos,dc=com
+dn: cn=engineering,ou=posix_group,dc=ourcorp,dc=com
 objectClass: posixGroup
 objectClass: top
-cn: vault_devs
+cn: engineering
 gidNumber: 1001
-memberUid: cn=jeff,ou=people,dc=hashidemos,dc=com
-memberUid: cn=andy,ou=people,dc=hashidemos,dc=com
+memberUid: cn=chun,ou=people,dc=ourcorp,dc=com
 
-dn: cn=users,ou=posix_group,dc=hashidemos,dc=com
+dn: cn=it,ou=posix_group,dc=ourcorp,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: it
+gidNumber: 1002
+memberUid: cn=deepak,ou=people,dc=ourcorp,dc=com
+
+dn: cn=eve,ou=posix_group,dc=ourcorp,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: eve
+gidNumber: 1003
+memberUid: cn=eve,ou=people,dc=ourcorp,dc=com
+
+dn: cn=users,ou=posix_group,dc=ourcorp,dc=com
 objectClass: posixGroup
 objectClass: top
 cn: users
-gidNumber: 1002
-memberUid: cn=geoffrey,ou=people,dc=hashidemos,dc=com
-memberUid: cn=yoko,ou=people,dc=hashidemos,dc=com
-memberUid: cn=rachel,ou=people,dc=hashidemos,dc=com
+gidNumber: 1004
+memberUid: cn=frank,ou=people,dc=ourcorp,dc=com
