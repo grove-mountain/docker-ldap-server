@@ -8,3 +8,9 @@ export LDAP_READONLY_USER_PASSWORD=${LDAP_READONLY_USER_PASSWORD:-"devsecopsFTW"
 export LDAP_ADMIN_PASSWORD=${LDAP_ADMIN_PASSWORD:-"hashifolk"}
 # This is the default user password created by the default ldif creator if none other is specified
 export DEFAULT_USER_PASSWORD="thispasswordsucks"
+
+# This is for the time to wait when using demo_magic.sh
+if [[ -z ${DEMO_WAIT} ]];then
+  DEMO_WAIT=0
+fi
+
